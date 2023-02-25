@@ -1,7 +1,7 @@
 # This is a sample Python script.
 import math
 
-x = int(input("Nhap so x bat ki: "))
+x = int(input("Nhập giá trị x bất kì "))
 eps = pow(10, -6)
 first = 1
 second = first + (x / 1)
@@ -26,4 +26,4 @@ while abs(first - second) > eps:
     first = second
     second = first + exp(x, n)
 
-print(first)
+print("Kết quả phép toán với x = ", x, " là: ", first)

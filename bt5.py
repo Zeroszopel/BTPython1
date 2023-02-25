@@ -1,4 +1,7 @@
-x = float(input("Nhap so x bat ki: "))
+x = float(input("Nhập giá trị x bất kì với x ∈ (-1, +1): "))
+while x <= -1 or x >= 1:
+    x = float(input("Nhập giá trị x bất kì với x ∈ (-1, +1): "))
+
 eps = pow(10, -6)
 first = 1
 second = first - (1 / 2) * x
@@ -20,4 +23,4 @@ while abs(first - second) > eps:
     first = second
     second = first + pow(-1, n) * exp(n) * pow(x, n)
 
-print(first)
+print("Kết quả phép toán với x = ", x, " là: ", first)

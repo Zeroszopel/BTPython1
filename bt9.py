@@ -8,20 +8,19 @@ def mul(y):
 x = float(input("Nhap so x bat ki: "))
 eps = pow(10, -6)
 first = 1
-second = first - pow(x, 2)/mul(3)
+second = first - pow(x, 2) / mul(3)
 n = 1
 
 
 def exp(n):
     a = 1
-    b = mul(n*2+1)
+    b = mul(n * 2 + 1)
     return a / b
-
 
 
 while abs(first - second) > eps:
     n += 1
     first = second
-    second = first + pow(-1, n)*exp(n)*pow(x, n*2)
+    second = first + pow(-1, n) * exp(n) * pow(x, n * 2)
 
-print(first)
+print("Kết quả phép toán với x = ", x, " là: ", first)
