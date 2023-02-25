@@ -5,7 +5,7 @@ def mul(y):
     return s
 
 
-x = float(input("Nhap giá trị x bất kì: "))
+x = float(input("Nhập giá trị x bất kì: "))
 eps = pow(10, -6)
 first = x
 second = first + pow(x, 3) / mul(3)

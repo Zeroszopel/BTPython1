@@ -5,7 +5,7 @@ def mul(y):
     return s
 
 
-x = float(input("Nhap so x bat ki: "))
+x = float(input("Nhập giá trị x bất kì: "))
 eps = pow(10, -6)
 first = 1
 second = first - pow(x, 2) / mul(3)

@@ -1,7 +1,7 @@
 # This is a sample Python script.
 import math
 
-x = int(input("Nhập giá trị x bất kì "))
+x = int(input("Nhập giá trị x bất kì: "))
 eps = pow(10, -6)
 first = 1
 second = first + (x / 1)
